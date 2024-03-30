@@ -1,0 +1,24 @@
+{
+  "chapterId": "s1",
+  "chapterTitle": "titleChapter1",
+  "chapterHref": "#s1",
+  "subchaptersInfo": [
+    {
+      "subchapterTitle": "subchapterTitle1",
+      "subchapterHref": "#subchapterHref"
+    },
+    {
+      "subchapterTitle": "subchapterTitle1",
+      "subchapterHref": "#subchapterHref1"
+    },
+    {
+      "subchapterTitle": "subchapterTitle1",
+      "subchapterHref": "#subchapterHref1"
+    }
+  ],
+  "summaryComponetContent": [
+    { "text": "summaryComponetContent1", "value": "—" },
+    { "text": "summaryComponetContent1", "value": "—" }
+  ],
+  "chapterComponent": ""
+}

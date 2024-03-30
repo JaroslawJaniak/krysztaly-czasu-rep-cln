@@ -20,6 +20,15 @@
   background-color: #efefef;
 }
 
+.main_container_menu {
+  height: 200vh;
+}
+
+header {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
 .window__InnerSize {
   color: white;
   font-size: large;
