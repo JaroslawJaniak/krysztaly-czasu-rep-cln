@@ -1,4 +1,4 @@
-const race2_base_stats_halfelf_male = {
+const race2_base_stats_male = {
   id: "race2m",
   age: 30,
   race: "PÓŁELFY",
@@ -37,4 +37,4 @@ const race2_base_stats_halfelf_male = {
   Odp10: 10,
 };
 
-export default race2_base_stats_halfelf_male;
+export default race2_base_stats_male;
