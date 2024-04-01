@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import CheckboxComponent from './CheckboxComponent';
+import React, { useState } from "react";
+import CheckboxComponent from "./CheckboxComponent";
 import chp1_race_description from "./chp1_race_description";
 
-
-const RaceSelection = () => {
+const Chapter1RaceSelection = (props) => {
   const [checkedElement, setCheckedElement] = useState(null);
 
   const handleElementChange = (element) => {
@@ -13,9 +12,10 @@ const RaceSelection = () => {
   return (
     <form>
       {chp1_race_description.map((chp1_race_description) => (
-        <div>
+        <div key={`chp1_div_checkbox${chp1_race_description.id}`}>
           <br />
           <CheckboxComponent
+            key={`chp1_checkbox${chp1_race_description.id}`}
             id={chp1_race_description.id}
             class={chp1_race_description.class}
             name={chp1_race_description.name}
@@ -34,4 +34,4 @@ const RaceSelection = () => {
   );
 };
 
-export default RaceSelection;
+export default Chapter1RaceSelection;

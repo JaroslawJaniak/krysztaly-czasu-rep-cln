@@ -1,15 +1,21 @@
 import React, { useState } from "react";
 
-import GenderSelection from "./Chapter1GenderChangeComponent";
-import RaceSelection from "./Chapter1RaceChangeComponent";
+import Chapter1GenderSelection from "./Chapter1GenderSelectionComponent";
+import Chapter1RaceSelection from "./Chapter1RaceSelectionComponent";
+import * as chp1_data from "../../../data/chaptersCompnentsData/chp1_data.json";
 
-const ChapterContent1 = () => {
+
+const Chapter1Content = () => {
+  
+
+ 
+
   return (
     <div>
-      <GenderSelection />
-      <RaceSelection />
+      <Chapter1GenderSelection />
+      <Chapter1RaceSelection/>
     </div>
   );
 };
 
-export default ChapterContent1;
+export default Chapter1Content;

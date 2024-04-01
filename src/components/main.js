@@ -9,7 +9,7 @@ import * as infoDataChapter1 from "../data/mainComponentsData/mainComponentsInfo
 import * as infoDataChapter2 from "../data/mainComponentsData/mainComponentsInfoDataChapter2.json";
 import * as infoDataChapter3 from "../data/mainComponentsData/mainComponentsInfoDataChapter3.json";
 
-import ChapterContent1 from "./chapters/chapter1/Chapter1Content";
+import Chapter1Content from "./chapters/chapter1/Chapter1Content";
 
 import "../styles/main.css";
 
@@ -30,7 +30,7 @@ const Main = () => {
         <Header />
         <div className="main_container-sections">
           main_container__sections
-          <ChapterContent1 />
+          <Chapter1Content />
         </div>
       </div>
       <div className="main_container_summary summary">

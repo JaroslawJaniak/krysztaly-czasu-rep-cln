@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CheckboxComponent from './CheckboxComponent';
 
-const GenderSelection = () => {
+const Chapter1GenderSelection = () => {
   const [maleChecked, setMaleChecked] = useState(false);
   const [femaleChecked, setFemaleChecked] = useState(false);
 
@@ -37,4 +37,4 @@ const GenderSelection = () => {
   );
 };
 
-export default GenderSelection;
+export default Chapter1GenderSelection;
