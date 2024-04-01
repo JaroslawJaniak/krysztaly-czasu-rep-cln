@@ -9,7 +9,7 @@ import * as infoDataChapter1 from "../data/mainComponentsData/mainComponentsInfo
 import * as infoDataChapter2 from "../data/mainComponentsData/mainComponentsInfoDataChapter2.json";
 import * as infoDataChapter3 from "../data/mainComponentsData/mainComponentsInfoDataChapter3.json";
 
-import ChapterContent_I from "./chapters/chapter1/Chapter1Content";
+import ChapterContent1 from "./chapters/chapter1/Chapter1Content";
 
 import "../styles/main.css";
 
@@ -21,8 +21,8 @@ const Main = () => {
   ];
 
   return (
-    <main className="main" role="main">
-      <div className="main_container main_container_menu">
+    <main className="main main_container" role="main">
+      <div className="main_container_menu">
         main_container__menu
         <Menu chapters_info={mainComponentsInfo} />
       </div>
@@ -30,12 +30,15 @@ const Main = () => {
         <Header />
         <div className="main_container-sections">
           main_container__sections
-          <ChapterContent_I />
+          <ChapterContent1 />
         </div>
       </div>
-      <div className="main_container summary">
+      <div className="main_container_summary summary">
         main_container__summary{" "}
-        <CharacterSummary chapters_info={mainComponentsInfo} />
+        <CharacterSummary
+          className="summary"
+          chapters_info={mainComponentsInfo}
+        />
       </div>
       <WindowInnerSize />
     </main>

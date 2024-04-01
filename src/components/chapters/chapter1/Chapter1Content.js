@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import GenderSelection from "./Chapter1GenderChangeComponent";
 import RaceSelection from "./Chapter1RaceChangeComponent";
 
-const ChapterContent_I = () => {
+const ChapterContent1 = () => {
   return (
     <div>
       <GenderSelection />
@@ -12,4 +12,4 @@ const ChapterContent_I = () => {
   );
 };
 
-export default ChapterContent_I;
+export default ChapterContent1;
