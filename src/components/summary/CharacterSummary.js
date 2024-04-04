@@ -11,10 +11,10 @@ const CharacterSummary = (props) => {
         <li className="character__summary__item">
           <span className="character__summary_name">(Imię Postaci)</span>
           <ul className="unordered-list">
-            {props.chapters_info.map((chapters) => (
+            {props.chapters_info.map((chapters, index) => (
               <CharacterSummaryListItem
-                key={chapters.chapterId}
-                chapterId={chapters.chapterId}
+                key={`summaryListItem${index}`}
+                chapterId={`summaryListItem${index}`}
                 chapterTitle={chapters.chapterTitle}
               >
                 <CharacterSummarySublist

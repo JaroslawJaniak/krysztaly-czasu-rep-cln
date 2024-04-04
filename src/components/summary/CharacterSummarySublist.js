@@ -3,9 +3,9 @@ import CharacterSummarySublistItem from "./CharacterSummarySublistItem";
 const CharacterSummarySublist = (props) => {
   return (
     <ul className="unordered-list">
-      {props.summaryInfo.map((summaryContent,index) => (
+      {props.summaryInfo.map((summaryContent, index) => (
         <CharacterSummarySublistItem
-          key={`summary${index}`}
+          key={`summarySublistItem${index}`}
           summaryText={summaryContent.text}
           summaryValue={summaryContent.value}
         ></CharacterSummarySublistItem>

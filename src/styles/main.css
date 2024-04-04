@@ -9,15 +9,17 @@
 
   border: 1px solid #efefef;
   background-color: #fff;
+  
 }
 
 .main_container {
   margin: 4px;
 
-  border: 1px solid #efefef;
+  border: 0px solid #efefef;
   border-radius: 4px;
 
-  background-color: #efefef;
+  background-color: #363636;
+  
 }
 
 .main_container-sections, .main_container_menu, .summary, header {

@@ -2,12 +2,18 @@ import React, { useState } from "react";
 import CheckboxComponent from "./CheckboxComponent";
 import chp1_race_description from "./chp1_race_description";
 
+import * as chp1JSON from "../../../data/chaptersCompnentsData/chapter1Data/chp1_data.json"; //wymagawłaściwego formatu danych w pliku JSON -> TO-DO
+import * as chp1JSON_race1 from "../../../data/chaptersCompnentsData/chapter1Data/chp1_race1.json";
+
 const Chapter1RaceSelection = (props) => {
   const [checkedElement, setCheckedElement] = useState(null);
 
   const handleElementChange = (element) => {
     setCheckedElement(element);
   };
+
+  const chp1JSONrace1 = chp1JSON_race1;
+  console.log(chp1JSONrace1);
 
   return (
     <form>

@@ -5,9 +5,9 @@ const MenuUnorderedList = (props) => {
   return (
     <div>
       <ul className="menu__unordered-list">
-        {props.chapters_info.map((chaptersInfo) => (
+        {props.chapters_info.map((chaptersInfo, index) => (
           <MenuListItem
-            key={chaptersInfo.chapterId}
+            key={`MenuListItem${index}`}
             chapterId={chaptersInfo.chapterId}
             chapterTitle={chaptersInfo.chapterTitle}
             chapterHref={chaptersInfo.chapterHref}

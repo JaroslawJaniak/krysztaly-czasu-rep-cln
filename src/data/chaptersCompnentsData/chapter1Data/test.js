@@ -1,4 +1,4 @@
-const xxxx = [
+const test = [
   {
     id: "male",
     type: "checkbox",
@@ -13,4 +13,4 @@ const xxxx = [
   },
 ];
 
-export default xxxx;
+export default test;

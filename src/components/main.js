@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Header from "./Header";
 import Menu from "./menu/Menu";
@@ -14,23 +14,41 @@ import Chapter1Content from "./chapters/chapter1/Chapter1Content";
 import "../styles/main.css";
 
 const Main = () => {
+  const [stateChapterViewId, setStateChapterViewId] = useState("s8");
+
   const mainComponentsInfo = [
     infoDataChapter1,
     infoDataChapter2,
     infoDataChapter3,
   ];
 
+  let defaultView = <div>- DEFAULT VIEW -</div>;
+
+  if (stateChapterViewId === "s1") {
+    defaultView = <Chapter1Content />;
+  }
+
+  const getChapterViewId = (id) => {
+    setStateChapterViewId(id);
+
+    console.log("4getViewID: " + id);
+    console.log("4getViewID st: " + stateChapterViewId);
+  };
+
   return (
     <main className="main main_container" role="main">
       <div className="main_container_menu">
         main_container__menu
-        <Menu chapters_info={mainComponentsInfo} />
+        <Menu
+          chapters_info={mainComponentsInfo}
+          onChapterViewId={getChapterViewId}
+        />
       </div>
       <div className="main_container">
         <Header />
         <div className="main_container-sections">
           main_container__sections
-          <Chapter1Content />
+          {defaultView}
         </div>
       </div>
       <div className="main_container_summary summary">

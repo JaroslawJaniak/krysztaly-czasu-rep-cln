@@ -1,0 +1,10 @@
+{
+  "id": "div_race1",
+  "type": "checkbox",
+  "name": "Ludzie",
+  "class": "race1 checkbox_containerr",
+  "text": [
+    "- +5 pkt. do biegłości w mieczach, lancach, kopiach, kuszach, włóczniach i rapierach;",
+    "- samouzdrowienie (czyli automatyczne odzyskiwanie punktów Wytrzymałości utraconych w wyniku odniesionych obrażeń) 2 pkt. obrażeń po każdych 8 godzinach wypoczynku;"
+  ]
+}
