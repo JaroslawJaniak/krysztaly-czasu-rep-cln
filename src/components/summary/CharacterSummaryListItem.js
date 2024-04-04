@@ -1,6 +1,6 @@
 const CharacterSummaryListItem = (props) => {
   return (
-    <li className="menu__item" id={props.chapterId}>
+    <li className="summaryList__item" id={props.chapterId}>
       {props.chapterTitle}
       {props.children}
     </li>

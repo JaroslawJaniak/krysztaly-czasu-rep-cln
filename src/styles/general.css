@@ -36,6 +36,11 @@ nav {
   display: inline;
 }
 
+.character__summary {
+  width: 100%;
+}
+
+/*summary map image*/
 .mapImage {
   width: 50%;
   height: 48%;

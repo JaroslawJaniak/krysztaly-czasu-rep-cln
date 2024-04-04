@@ -14,7 +14,7 @@ import Chapter1Content from "./chapters/chapter1/Chapter1Content";
 import "../styles/main.css";
 
 const Main = () => {
-  const [stateChapterViewId, setStateChapterViewId] = useState("s8");
+  const [stateChapterViewId, setStateChapterViewId] = useState("s1");
 
   const mainComponentsInfo = [
     infoDataChapter1,
@@ -22,7 +22,7 @@ const Main = () => {
     infoDataChapter3,
   ];
 
-  let defaultView = <div>- DEFAULT VIEW -</div>;
+  let defaultView = <div>- DEFAULT VIEW {stateChapterViewId}-</div>;
 
   if (stateChapterViewId === "s1") {
     defaultView = <Chapter1Content />;
@@ -30,9 +30,6 @@ const Main = () => {
 
   const getChapterViewId = (id) => {
     setStateChapterViewId(id);
-
-    console.log("4getViewID: " + id);
-    console.log("4getViewID st: " + stateChapterViewId);
   };
 
   return (
