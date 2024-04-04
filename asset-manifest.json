@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/krysztaly-czasu-rep-cln/static/css/main.18806bfb.css",
-    "main.js": "/krysztaly-czasu-rep-cln/static/js/main.61bdc14b.js",
+    "main.css": "/krysztaly-czasu-rep-cln/static/css/main.f5e5c57f.css",
+    "main.js": "/krysztaly-czasu-rep-cln/static/js/main.12dcfa02.js",
     "static/js/453.08ee5d84.chunk.js": "/krysztaly-czasu-rep-cln/static/js/453.08ee5d84.chunk.js",
     "static/media/map0.jpg": "/krysztaly-czasu-rep-cln/static/media/map0.ad0c4fcc9e489ffe2d9a.jpg",
     "static/media/kc_logo.JPG": "/krysztaly-czasu-rep-cln/static/media/kc_logo.ac457116605c7e32691e.JPG",
     "index.html": "/krysztaly-czasu-rep-cln/index.html",
-    "main.18806bfb.css.map": "/krysztaly-czasu-rep-cln/static/css/main.18806bfb.css.map",
-    "main.61bdc14b.js.map": "/krysztaly-czasu-rep-cln/static/js/main.61bdc14b.js.map",
+    "main.f5e5c57f.css.map": "/krysztaly-czasu-rep-cln/static/css/main.f5e5c57f.css.map",
+    "main.12dcfa02.js.map": "/krysztaly-czasu-rep-cln/static/js/main.12dcfa02.js.map",
     "453.08ee5d84.chunk.js.map": "/krysztaly-czasu-rep-cln/static/js/453.08ee5d84.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18806bfb.css",
-    "static/js/main.61bdc14b.js"
+    "static/css/main.f5e5c57f.css",
+    "static/js/main.12dcfa02.js"
   ]
 }
