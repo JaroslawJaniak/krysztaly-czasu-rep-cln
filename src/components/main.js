@@ -66,7 +66,8 @@ const Main = () => {
       <div className="main_container">
         <Header />
         <div className="main_container-sections">
-          main_container__sections - {stateGenderSelection}
+          main_container__sections - {stateGenderSelection},{" "}
+          {stateRaceSelection},<div>{stateRaceDescription}</div>
           {defaultView}
         </div>
       </div>

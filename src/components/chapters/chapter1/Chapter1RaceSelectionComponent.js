@@ -12,6 +12,8 @@ const Chapter1RaceSelection = (props) => {
     setCheckedElement(element);
   };
 
+   
+
   const chp1JSONrace1 = chp1JSON_race1;
   console.log(chp1JSONrace1);
 
@@ -27,8 +29,11 @@ const Chapter1RaceSelection = (props) => {
             name={chp1_race_description.name}
             type={chp1_race_description.type}
             checked={checkedElement === `${chp1_race_description.name}`}
-            onChange={() =>
+            onChange={() => {
               handleElementChange(`${chp1_race_description.name}`)
+              props.getRaceSelection(chp1_race_description.name);
+              props.getRaceDescription(chp1_race_description.text);
+            }
             }
           />
           {chp1_race_description.text.map((chapterText) => (
