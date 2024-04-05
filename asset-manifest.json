@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/krysztaly-czasu-rep-cln/static/css/main.e8df22d0.css",
-    "main.js": "/krysztaly-czasu-rep-cln/static/js/main.549cb037.js",
+    "main.js": "/krysztaly-czasu-rep-cln/static/js/main.f0606e02.js",
     "static/js/453.08ee5d84.chunk.js": "/krysztaly-czasu-rep-cln/static/js/453.08ee5d84.chunk.js",
     "static/media/map0.jpg": "/krysztaly-czasu-rep-cln/static/media/map0.ad0c4fcc9e489ffe2d9a.jpg",
     "static/media/kc_logo.JPG": "/krysztaly-czasu-rep-cln/static/media/kc_logo.ac457116605c7e32691e.JPG",
     "index.html": "/krysztaly-czasu-rep-cln/index.html",
     "main.e8df22d0.css.map": "/krysztaly-czasu-rep-cln/static/css/main.e8df22d0.css.map",
-    "main.549cb037.js.map": "/krysztaly-czasu-rep-cln/static/js/main.549cb037.js.map",
+    "main.f0606e02.js.map": "/krysztaly-czasu-rep-cln/static/js/main.f0606e02.js.map",
     "453.08ee5d84.chunk.js.map": "/krysztaly-czasu-rep-cln/static/js/453.08ee5d84.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e8df22d0.css",
-    "static/js/main.549cb037.js"
+    "static/js/main.f0606e02.js"
   ]
 }
