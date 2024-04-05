@@ -15,6 +15,22 @@ import "../styles/main.css";
 
 const Main = () => {
   const [stateChapterViewId, setStateChapterViewId] = useState("s1");
+  const [stateGenderSelection, setStateGenderSelection] = useState("");
+  const [stateRaceSelection, setStateRaceSelection] = useState("");
+  const [stateRaceDescription, setStateRaceDescription] = useState("");
+
+  const getChapterViewId = (id) => {
+    setStateChapterViewId(id);
+  };
+  const getGenderSelection = (gender) => {
+    setStateGenderSelection(gender);
+  };
+  const getRaceSelection = (race) => {
+    setStateRaceSelection(race);
+  };
+  const getRaceDescription = (raceDescription) => {
+    setStateRaceDescription(raceDescription);
+  };
 
   const mainComponentsInfo = [
     infoDataChapter1,
@@ -22,15 +38,21 @@ const Main = () => {
     infoDataChapter3,
   ];
 
-  let defaultView = <div>- DEFAULT VIEW {stateChapterViewId}-</div>;
+  let defaultView = (
+    <div>
+      - DEFAULT VIEW {stateChapterViewId} -
+    </div>
+  );
 
   if (stateChapterViewId === "s1") {
-    defaultView = <Chapter1Content />;
+    defaultView = (
+      <Chapter1Content
+        getGenderSelection={getGenderSelection}
+        getRaceSelection={getRaceSelection}
+        getRaceDescription={getRaceDescription}
+      />
+    );
   }
-
-  const getChapterViewId = (id) => {
-    setStateChapterViewId(id);
-  };
 
   return (
     <main className="main main_container" role="main">
@@ -38,13 +60,13 @@ const Main = () => {
         main_container__menu
         <Menu
           chapters_info={mainComponentsInfo}
-          onChapterViewId={getChapterViewId}
+          getChapterViewId={getChapterViewId}
         />
       </div>
       <div className="main_container">
         <Header />
         <div className="main_container-sections">
-          main_container__sections
+          main_container__sections - {stateGenderSelection}
           {defaultView}
         </div>
       </div>

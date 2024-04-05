@@ -6,7 +6,7 @@ const Menu = (props) => {
     <nav className="">
       <MenuUnorderedList
         chapters_info={props.chapters_info}
-        onChapterViewId={props.onChapterViewId}
+        getChapterViewId={props.getChapterViewId}
       ></MenuUnorderedList>
     </nav>
   );

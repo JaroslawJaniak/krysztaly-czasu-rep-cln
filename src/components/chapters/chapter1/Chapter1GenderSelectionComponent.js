@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import CheckboxComponent from './CheckboxComponent';
+import React, { useState } from "react";
+import CheckboxComponent from "./CheckboxComponent";
 
-const Chapter1GenderSelection = () => {
+const Chapter1GenderSelection = (props) => {
   const [maleChecked, setMaleChecked] = useState(false);
   const [femaleChecked, setFemaleChecked] = useState(false);
 
@@ -14,6 +14,12 @@ const Chapter1GenderSelection = () => {
     setFemaleChecked(!femaleChecked);
     setMaleChecked(false);
   };
+
+  if (maleChecked) {
+    props.getGenderSelection("mężczyzna");
+  } else if (femaleChecked) {
+    props.getGenderSelection("kobieta");
+  }
 
   return (
     <form>

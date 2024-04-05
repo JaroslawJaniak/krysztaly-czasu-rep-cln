@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 
 const MenuListItem = (props) => {
-  const [stateChapterViewId, setStateChapterViewId] = useState("s1");
+  
 
   const clickHandler = () => {
-    setStateChapterViewId(props.chapterId);
-    props.onChapterViewId(props.chapterId);
+    props.getChapterViewId(props.chapterId);
   };
 
   return (

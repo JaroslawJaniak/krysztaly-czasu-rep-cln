@@ -17,8 +17,8 @@
     }
   ],
   "summaryComponetContent": [
-    { "text": "summaryComponetContent1", "value": "—" },
-    { "text": "summaryComponetContent1", "value": "—" }
+    { "text": "Płeć: ", "value": "—" },
+    { "text": "Rasa: ", "value": "—" }
   ]
   
 }
