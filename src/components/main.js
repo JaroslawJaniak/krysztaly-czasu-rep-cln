@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 import Header from "./Header";
 import Menu from "./menu/Menu";
-import CharacterSummary from "./summary/CharacterSummary";
+//import CharacterSummary from "./summary/CharacterSummary";
+import CharacterSummary from "./summaryJSON/CharacterSummary";
 import WindowInnerSize from "./WindowInnerSize";
 
 import * as infoDataChapter1 from "../data/mainComponentsData/mainComponentsInfoDataChapter1.json";
@@ -38,11 +39,7 @@ const Main = () => {
     infoDataChapter3,
   ];
 
-  let defaultView = (
-    <div>
-      - DEFAULT VIEW {stateChapterViewId} -
-    </div>
-  );
+  let defaultView = <div>- DEFAULT VIEW {stateChapterViewId} -</div>;
 
   if (stateChapterViewId === "s1") {
     defaultView = (

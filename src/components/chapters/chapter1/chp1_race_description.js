@@ -49,7 +49,7 @@ const chp1_race_description = [
     name: "Półorki",
     class: "race5 checkbox_containerr",
     text: [
-      "- 10 pkt. do biegłości w szabiach, łukach refleksyjnych oraz 5 pkt. w nożach;",
+      "- 10 pkt. do biegłości w szablach, łukach refleksyjnych oraz 5 pkt. w nożach;",
       "- infrawizja (1/10 SZ);",
       "- samouzdrowienie 2 pkt. obrażeń po 8 godzinach wypoczynku;",
     ],

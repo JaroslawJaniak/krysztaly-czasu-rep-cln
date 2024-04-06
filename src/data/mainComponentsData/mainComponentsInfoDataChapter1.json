@@ -17,8 +17,9 @@
     }
   ],
   "summaryComponetContent": [
-    { "text": "Płeć: ", "value": "—" },
-    { "text": "Rasa: ", "value": "—" }
+    { "text": "Płeć", "value": "—" },
+    { "text": "Rasa", "value": "—" },
+     { "text": "Opis rasy", "value": "—" }
   ]
   
 }
