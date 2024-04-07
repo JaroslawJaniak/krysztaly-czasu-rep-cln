@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import * as fs from "fs";
 
 import Header from "./Header";
 import Menu from "./menu/Menu";
@@ -10,15 +11,17 @@ import * as infoDataChapter1 from "../data/mainComponentsData/mainComponentsInfo
 import * as infoDataChapter2 from "../data/mainComponentsData/mainComponentsInfoDataChapter2.json";
 import * as infoDataChapter3 from "../data/mainComponentsData/mainComponentsInfoDataChapter3.json";
 
+import test from "../data/test";
+
 import Chapter1Content from "./chapters/chapter1/Chapter1Content";
 
 import "../styles/main.css";
 
 const Main = () => {
   const [stateChapterViewId, setStateChapterViewId] = useState("s1");
-  const [stateGenderSelection, setStateGenderSelection] = useState("");
-  const [stateRaceSelection, setStateRaceSelection] = useState("");
-  const [stateRaceDescription, setStateRaceDescription] = useState("");
+  const [stateGenderSelection, setStateGenderSelection] = useState("—");
+  const [stateRaceSelection, setStateRaceSelection] = useState("—");
+  const [stateRaceDescription, setStateRaceDescription] = useState("—");
 
   const getChapterViewId = (id) => {
     setStateChapterViewId(id);
@@ -32,6 +35,19 @@ const Main = () => {
   const getRaceDescription = (raceDescription) => {
     setStateRaceDescription(raceDescription);
   };
+
+  let summaryComponetData = [
+    { text: "Płeć: ", value: `${stateGenderSelection}` },
+    { text: "Rasa: ", value: `${stateRaceSelection}` },
+    { text: "Opis rasy: ", value: `${stateRaceDescription}` },
+    { text: "Charakter: ", value: "—" },
+    { text: "Miejsce urodzenia: ", value: "—" },
+    { text: "Wyjściowa klasa społeczna: ", value: "—" },
+    { text: "Roczny dochód: ", value: "—" },
+    { text: "Ułomności: ", value: "—" },
+    { text: "Zdolności nadnaturalne: ", value: "—" },
+    { text: "Profesja: ", value: "—" },
+  ];
 
   const mainComponentsInfo = [
     infoDataChapter1,
@@ -63,8 +79,7 @@ const Main = () => {
       <div className="main_container">
         <Header />
         <div className="main_container-sections">
-          main_container__sections - {stateGenderSelection},{" "}
-          {stateRaceSelection},<div>{stateRaceDescription}</div>
+          main_container__sections 
           {defaultView}
         </div>
       </div>
@@ -72,7 +87,7 @@ const Main = () => {
         main_container__summary{" "}
         <CharacterSummary
           className="summary"
-          chapters_info={mainComponentsInfo}
+          summaryData={summaryComponetData}
         />
       </div>
       <WindowInnerSize />
